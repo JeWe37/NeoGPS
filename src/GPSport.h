@@ -136,7 +136,6 @@
     //  This Arduino has more than one hardware serial port, 
     //      use Serial1 (or NeoSerial1).
     #define NEOGPS_USE_SERIAL1
-
   #endif
 
 #endif

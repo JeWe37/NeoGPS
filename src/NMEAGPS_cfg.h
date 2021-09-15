@@ -31,13 +31,13 @@
 // required if you will be doing time_t-to-clock_t operations.
 
 #define NMEAGPS_PARSE_GGA
-//#define NMEAGPS_PARSE_GLL
+#define NMEAGPS_PARSE_GLL
 //#define NMEAGPS_PARSE_GSA
 //#define NMEAGPS_PARSE_GSV
 //#define NMEAGPS_PARSE_GST
 #define NMEAGPS_PARSE_RMC
-//#define NMEAGPS_PARSE_VTG
-//#define NMEAGPS_PARSE_ZDA
+#define NMEAGPS_PARSE_VTG
+#define NMEAGPS_PARSE_ZDA
 
 //------------------------------------------------------
 // Select which sentence is sent *last* by your GPS device
@@ -199,7 +199,7 @@
 //#define NMEAGPS_SAVE_TALKER_ID
 //#define NMEAGPS_PARSE_TALKER_ID
 
-//#define NMEAGPS_PARSE_PROPRIETARY
+#define NMEAGPS_PARSE_PROPRIETARY
 #ifdef NMEAGPS_PARSE_PROPRIETARY
   //#define NMEAGPS_SAVE_MFR_ID
   #define NMEAGPS_PARSE_MFR_ID
@@ -231,7 +231,7 @@
 // Enable/disable gathering interface statistics:
 // CRC errors and number of sentences received
 
-#define NMEAGPS_STATS
+//#define NMEAGPS_STATS
 
 //------------------------------------------------------
 // Configuration item for allowing derived types of NMEAGPS.
@@ -239,7 +239,7 @@
 // If not defined, virtuals are not used, with a slight size (2 bytes) and 
 // execution time savings.
 
-//#define NMEAGPS_DERIVED_TYPES
+#define NMEAGPS_DERIVED_TYPES
 
 #ifdef NMEAGPS_DERIVED_TYPES
   #define NMEAGPS_VIRTUAL virtual
